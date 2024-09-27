@@ -1,0 +1,90 @@
+body{
+  color:#333333; /*この色(#333333)は、文字の色として最適*/
+  /*font-family: sans-serif;*/ /*normalizeの方に記載した。normalizeを先にhtmlファイルに書く必要があり先に実行されるので、不要になる。*/
+}
+
+p{
+  font-size:14px;
+  line-height: 1.429;
+}
+
+/*リスト*/
+ul li{
+  font-size: 14px;
+  list-style-type: square; /*listの先頭の点(リスト記号)の種類を変更する。*/
+  line-height: 1.429;
+}
+
+/*表*/
+table {
+  font-size: 14px;
+  line-height: 1.429;
+  border: 1px solid #CCCCCC;
+  /*border-collapse: collapse;*/ /*罫線間の隙間をなくすことが出来る。*/
+  width: 100%;/*ブラウザの横幅いっぱいに表の横幅を拡張する。*/
+}
+table th,
+table td { /*th,tdとすることで表のレイアウト決定ができる。*/
+  border: 1px solid #CCCCCC;
+  padding: 5px 10px;
+}
+table th {
+  background-color: #EEEEEE;
+  text-align: left; /*文章の左揃え*/
+}
+
+table caption {
+  text-align: left;
+  font-weight: bold; /*見出しを細字に、段落を太字にする。*/
+}
+
+
+/*見出し*/
+.pageTitle{
+  font-size:26px;
+  background-color:#F2F2E5;
+  padding: 5px 15px;
+  line-height: 1.231;
+}
+.heading-typeA{
+  font-size:18px;
+  color:#349FA6;
+  border-bottom: solid 1px #349FA6; /*border-bottomでこの場合はヘッダーに下線を引くことが出来る*/
+  padding: 5px;
+  line-height: 1.333;
+}
+.heading-typeB{
+  font-size:16px;
+  border-left: solid 5px #E3E4D9; /*border-leftで文字初めの部分に小さな縦線を引くことが出来る*/
+  padding: 10px;
+  line-height: 1.375;
+}
+.heading-typeC{
+  font-size:14px;
+  line-height: 1.429;
+}
+
+/*区切り線・余白*/
+.articleDetailHead{
+  border-bottom: solid 1px #CCCCCC;/*Headの一番下に区切り線*/
+  margin-bottom: 30px; /*headの下の余白の範囲を入力。marginは罫線の外側に余白を設定する。*/
+  padding: 15px; /*headと区切り線の距離調整。罫線の内側に余白を追加する。*/
+}
+.articleDetailFoot{
+  border-top: solid 1px #CCCCCC;/*Footの一番上に区切り線*/
+  margin-top: 30px;
+  padding: 15px;
+}
+.articleDetailBody section{
+  margin: 30px 0; /*上下、左右の順。間隔をあける。articleDetailBodyの中にあるsectionの上下左右スペースの幅を決める。*/
+}
+
+/*撮影情報*/
+.creditUnit {
+  padding: 10px;
+  border: solid 1px #CCCCCC; /*無印borderはそのclass全てを囲む線を描くことになる。*/
+}
+.creditUnit p {
+  font-size: 12px;
+  line-height: 1.5;
+}
